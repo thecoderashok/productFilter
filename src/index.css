@@ -1,13 +1,249 @@
-body {
+*, html{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+
 }
+
+main{
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+section{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.product_section{
+  background: rgb(244, 244, 244);
+}
+
+.product_filter_nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 2rem;
+  min-height: 10rem;
+}
+
+.vertical_line{
+  width: .1rem;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  background: rgb(116, 116, 116);
+  transform: translateY(-50%);
+}
+
+
+.tab_margin{
+  margin: 0 1.5rem;
+}
+.person_filter_tab{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-transform: uppercase !important;
+}
+
+.tab_title{
+  font-size: .7rem !important;
+  color: #858585 !important;
+  width: 100% !important ;
+  text-align: left !important;
+  font-weight: 600;
+  margin-bottom: .8rem;
+}
+.person_filter_tab .tabs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.person_filter_tab .tabs button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize !important;
+  border: none;
+  outline: none !important;
+  background: none !important;
+  font-size: .7rem;
+  color: rgb(103, 103, 103);
+  margin-right: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+.person_filter_tab .tabs button i{
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+}
+
+
+
+.price_filter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-transform: uppercase !important;
+}
+
+.category_tab{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-transform: uppercase !important;
+  height: 100%;
+}
+
+
+
+
+.custom-select{
+  width: 8rem !important;
+  height: auto;
+  cursor: pointer;
+}
+.custom-select select{
+  width: 90%;
+  background: transparent;
+  border: 0 !important;
+  font-size: 1rem;
+  outline: none !important;
+  
+}
+.custom-select select option{
+  width: 100%;
+  background: transparent;
+  border: 0 !important;
+  font-size: 1rem;
+  outline: none !important;
+  box-shadow: nonw !important;
+}
+
+
+
+
+
+#yearslider {
+    width: 300px;
+  }
+
+  #slider {
+    position: relative !important;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 100% !important;
+    width: 18rem;
+    background: #848484;
+    outline: none;
+    max-height: .1rem;
+  }
+
+  .slider_path{
+    position: absolute;
+    width: 100%;
+    height: .2rem;
+    top: 50%;
+    background: red;
+    transform: translateY(-50%);
+  }
+  
+  #slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 2%;
+    background: #ff4c10;
+    cursor: pointer;
+
+  }
+  
+  
+  #slider::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dbc500;
+    cursor: pointer;
+    border: 3px solid #f4f4f4;
+  }
+
+  .product_carousel{
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    
+    
+  }
+
+
+  .product_card{
+    position: relative;
+    min-width: 10%;
+    min-height: 10rem;
+    max-width: 15rem;
+    width: 12%;
+    height: auto;
+    background: rgb(255, 255, 255);
+    margin: .2rem;
+  }
+  .product_card img{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .product_card .column_wrapper{
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 10%;
+  }
+  .product_card .column_wrapper i{
+    font-size: .8rem;
+    font-weight: 500;
+    color: #848484;
+  }
+  .product_card .column_wrapper p{
+    font-size: .8rem;
+    font-weight: 500;
+  }
+
+  i{
+    font-style: normal !important;
+  }
